@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HFG</title>
+    <link rel="stylesheet" href="static/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Odibee+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffac8fc367.js" crossorigin="anonymous"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon_io/site.webmanifest">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="main-banner"><a href="/">HFG</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/material">Material</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a class="current" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h2 class="cuhead">Contact us</h2><br>
+            <div class="git">
+                <i class="fab fa-github fa-4x"></i> <br>
+                <a href="https://github.com/Hardware-Focus-Group" target="_blank">https://github.com/Hardware-Focus-Group</a>
+
+            </div>
+
+
+            <p>
+
+                <div class="binder">
+                        Shithij Rai: <br> 
+                    &#9990; <a href="tel:+919449622530">+91 9449622530</a><br>
+                    
+                    <i class="fas fa-at"></i> <a href="mailto:raishithij1999@gmail.com" target="_blank">raishithij1999@gmail.com</a>
+                </div>
+                <div class="binder">
+                    Shujan Pannag: <br> 
+                    &#9990; <a href="tel:+918197540682">+91 8197540682</a><br>
+    
+                    <i class="fas fa-at"></i> <a href="mailto:shujanpannag@gmail.com" target="_blank">shujanpannag@gmail.com</a>
+                </div>
+                <div class="binder">
+                    Ramprakash: <br> 
+                    &#9990; <a href="tel:+919591045582">+91 9591045582</a><br>
+    
+                    <i class="fas fa-at"></i> <a href="mailto:ramprakash.chandrashekar@gmail.com" target="_blank">ramprakash.chandrashekar@gmail.com</a>
+                </div>
+            </p>
+
+            <h2 id="feedback-header">Feedback</h2>
+
+            <span class="thumbs">
+                <div class="thumb">
+                    <div id="thumbs-up" class="thumbChange"><i class="far fa-thumbs-up faico"></i></div>
+                    <div class="thumbsCount">{{ nolikes }}</div>
+                </div>
+                <div class="thumb">
+                    <div id="thumbs-down" class="thumbChange"><i class="far fa-thumbs-down faico"></i></div>
+                    <div class="thumbsCount">{{ nodislikes }}</div>
+                </div>
+            </span>
+
+            <div class="form-class">
+                <form id="form_id" action="/contact/form" method="post">
+                    <label class="form-label" for="mail">Email : </label><br>
+                    <input type="email" name="mail" id="mail" placeholder="example@doman.com"><br>
+                    <label class="form-label" for="feedback">Enter Feedback:</label><br>
+                    <textarea name="feedback" id="feedback" placeholder="Your feedback is valuable to us"></textarea><br>
+                    <input type="submit" class="submit-btn" align="left" >
+                </form>
+            </div>
+            <h4 id="thankyouMessage">Thankyou for your feedback</h4>
+        </div>
+    </main>
+    <script src="static/like.js"></script>
+</body>
+</html>

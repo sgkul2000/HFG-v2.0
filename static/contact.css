@@ -1,0 +1,291 @@
+/* CSS reset script */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-banner{
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 0.9rem auto; */
+    font-family: 'Odibee Sans', cursive;
+    display: block;
+    padding: 0.9rem 0;
+}
+.main-banner a{
+    color: #eee;
+}
+body{
+    background-color: #222;
+
+}
+
+header{
+    background-color: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    height: 100px;
+    width: 100%;
+    color: #eee;
+    overflow: auto;
+    position: fixed;
+    top:  0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+nav ul li{
+    display: block;
+    /* float: left; */
+}
+
+nav ul li a{
+    font-size: 1.1rem;
+    color: #eee;
+    padding: 0.3rem     0.5rem;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+main{
+    color: #111;
+}
+
+.wrapper .cuhead{
+    font-size: 3rem;   
+    font-weight: 600;
+    margin: 5rem 0 1rem 0;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 800px;
+    text-align: left;
+    line-height: 1rem;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 4rem 1rem;
+    min-height: calc(100vh - 200px);
+}
+
+.wrapper a{
+    color: #111;
+}
+p{
+    text-align: justify;
+    line-height: 0rem;
+    margin: 2rem 0rem;
+}
+.git{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;   
+}
+.git i{
+    margin: 0rem auto 1rem auto;
+}
+
+.binder{
+    margin: 2rem auto;
+    line-height: 1.5rem;
+}
+.current{
+    color: #eee;
+    border: solid 1px #eee;
+}
+
+
+#feedback-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.form-class{
+    margin: 4rem 10% 0 10%;
+}
+
+.form-label{
+    font-size: 1.3rem;
+    padding: 3rem auto;
+    /* margin-top: 3rem; */
+
+
+}
+#mail, #feedback{
+    padding: 0.5rem 2rem;
+    background-color: #ccc;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    color: #111;
+    margin: 1rem auto;
+}
+#mail::placeholder, #feedback::placeholder{
+    color: #555 ;
+}
+
+#feedback{
+    height: 4rem;
+    resize: none;
+    width: 60%;
+}
+.submit-btn{
+    text-align: left;
+    padding: 0.7rem 1.5rem;
+    background-color: #0080FF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    color: #eee;
+}
+.thumbs{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem 30%;
+}
+.thumb{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faico{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.faico:hover{
+    opacity: 0.7;
+}
+.thumbsCount{
+    color: #222;
+    opacity: 0.8;
+    font-weight: 700;
+}
+#thankyouMessage{
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #222;
+    margin: 2rem 20% 1rem 20%;
+    background-color: rgba(75, 191, 67, 0.8);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+    .main-banner{
+        float: left;
+        margin: 0.55rem 3rem;
+        font-size: 1.5rem;
+        padding: 0 0;
+        /* padding: 0.5rem 0; */
+        /* border-right: solid #eee; */
+        padding-right: 0rem;
+        margin-left: 15%;
+
+
+    }
+
+
+    nav ul li{
+        padding:0.5rem 0.9rem ;
+        font-size: 0.5rem;
+        /* margin:1rem auto; */
+
+    }
+    header{
+        height: 44px;
+    }
+    nav ul{
+        margin: 0.12rem 15% 0.12rem 0;
+    }
+    .current{
+        border: none;
+    }
+    
+    .wrapper .cuhead{
+        margin: 3rem auto 1rem auto;
+        font-size: 3rem;
+    }
+    .wrapper{
+        padding: 4rem 8rem;
+        /* min-height: calc(100vh); */
+            
+    }
+    p{
+        margin: 2rem 5rem;
+
+    }
+    .current{
+        border: none;
+    }
+
+}

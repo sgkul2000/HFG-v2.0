@@ -1,0 +1,209 @@
+/* CSS reset script */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  mention the following to use font:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Odibee Sans', cursive; */
+
+
+.main-banner{
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 0.9rem auto; */
+    font-family: 'Odibee Sans', cursive;
+    display: block;
+    padding: 0.9rem 0;
+    text-decoration: none;
+    color: #eee;
+}
+.main-banner a{
+    color: #eee;
+}
+body{
+    background-color: #222;
+
+}
+
+header{
+    background-color: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    height: 100px;
+    width: 100%;
+    color: #eee;
+    overflow: auto;
+    position: fixed;
+    top:  0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+nav ul li{
+    display: block;
+    /* float: left; */
+}
+
+nav ul li a{
+    font-size: 1.1rem;
+    color: #eee;
+    padding: 0.3rem     0.5rem;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.banner{
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)) , url('/static/imgs/electronics-bgimg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.ver-align{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);    
+    text-shadow: 0.1rem 0.1rem #222;
+    color: #eee;
+    letter-spacing: 0.3rem;
+}
+
+
+h2{
+    font-weight: 900;
+    clear: left;
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    /* line-height: 5rem; */
+}
+
+h3{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.current{
+    color: #eee;
+    border: solid 1px #eee;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+    .main-banner{
+        float: left;
+        margin: 0.55rem 3rem;
+        font-size: 1.5rem;
+        padding: 0 0;
+        /* padding: 0.5rem 0; */
+        /* border-right: solid #eee; */
+        padding-right: 0rem;
+        margin-left: 15%;
+
+
+    }
+
+
+    nav ul li{
+        padding:0.5rem 0.9rem ;
+        font-size: 0.5rem;
+        /* margin:1rem auto; */
+
+    }
+    header{
+        height: 44px;
+    }
+    nav ul{
+        margin: 0.12rem 15% 0.12rem 0;
+    }
+    .current{
+        border: none;
+    }
+    .banner{
+        height: calc(100vh - 44px);
+        margin-top: 44px;
+    }
+    h2{
+        font-size: 5.5rem;
+    }
+    h3{
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+}
