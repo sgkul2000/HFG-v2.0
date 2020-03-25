@@ -166,7 +166,7 @@ p{
 
 }
 #mail, #feedback{
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 10% 0.5rem 10%;
     background-color: #ccc;
     border-radius: 2px;
     border: solid 1px #ccc;
@@ -196,7 +196,7 @@ p{
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    margin: 4rem 30%;
+    margin: 2.3rem 17%;
 }
 .thumb{
     display: flex;
@@ -205,7 +205,7 @@ p{
 }
 
 .faico{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
 }
 .faico:hover{
@@ -217,16 +217,18 @@ p{
     font-weight: 700;
 }
 #thankyouMessage{
-    padding: 1rem 2rem;
     text-align: center;
     font-weight: 400;
-    font-size: 1.3rem;
     color: #222;
     margin: 2rem 20% 1rem 20%;
     background-color: rgba(75, 191, 67, 0.8);
     border-radius: 5px;
+    padding: 1rem 2rem;
+    line-height: 1.4;
 }
-
+#rpmail{
+    font-size: 0.8rem;
+}
 
 
 
@@ -287,5 +289,17 @@ p{
     .current{
         border: none;
     }
+    #thankyouMessage{
+        font-size: 1.3rem;
 
+    }
+    .faico{
+        font-size: 3rem;
+    }
+    .thumbs{
+        margin: 4rem 30%;
+    }
+    #mail, #feedback{
+        padding: 0.5rem 2rem;
+    }
 }
